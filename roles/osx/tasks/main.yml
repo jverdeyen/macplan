@@ -25,7 +25,7 @@
   with_items: osx_defaults
 
 - name: Set Lock screen message
-  shell: sudo write /Library/Preferences/com.apple.loginwindow LoginwindowText "{{ osx_lock_screen_text }}"
+  shell: sudo defaults write om.apple.loginwindow LoginwindowText "{{ osx_lock_screen_text }}"
 
 
 
