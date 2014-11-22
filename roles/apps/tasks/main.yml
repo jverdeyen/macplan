@@ -1,0 +1,13 @@
+---
+
+- name: Homebrew taps
+  homebrew_tap: tap={{ item }} state=present
+  with_items: homebrew_taps
+
+- name: Install brew apps
+  homebrew: name={{ item }} state=present
+  with_items: homebrew_apps
+
+- name: Install Cask apps
+  shell: brew cask install {{ item }} --appdir=/Applications
+  with_items: cask_apps

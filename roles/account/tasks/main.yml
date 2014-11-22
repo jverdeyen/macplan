@@ -1,0 +1,21 @@
+---
+
+- name: Send new account picture
+  copy:
+    src={{ item }}
+    dest="/Library/User Pictures/Picture"
+    mode=0644
+  ignore_errors: yes
+  sudo: yes
+  with_items: ["{{ account_picture }}"]
+
+- name: Clear existing user account picture
+  command: 'dscl . {{ item }}'
+  with_items:
+  - 'delete /Users/{{ user }} jpegphoto'
+  - 'delete /Users/{{ user }} Picture'
+  sudo: yes
+
+- name: Update user account picture
+  command: 'dscl . create /Users/{{ user }} Picture "/Library/User Pictures/Picture"'
+  sudo: yes

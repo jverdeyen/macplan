@@ -1,0 +1,32 @@
+---
+
+- name: 'Dock: Reset the Dock'
+  shell: 'defaults delete com.apple.dock'
+  ignore_errors: yes
+
+- name: 'Dock: Boilerplate: mod-count'
+  shell: 'defaults write com.apple.dock mod-count -integer 2'
+
+- name: 'Dock: Boilerplate: version'
+  shell: 'defaults write com.apple.dock version -integer 1'
+
+- name: 'Dock: Remove All Dock Apps'
+  shell: 'defaults write com.apple.dock persistent-apps "<array/>"'
+
+- name: 'Dock: Remove All Dock Others'
+  shell: 'defaults write com.apple.dock persistent-others "<array/>"'
+
+- name: 'Dock: Insert Apps'
+  shell: defaults write com.apple.dock persistent-apps -array-add "{{ item }}"
+  with_items: dock_apps
+
+- name: 'Dock: Insert Others'
+  shell: 'defaults write com.apple.dock persistent-others -array-add "<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>file://{{ item }}</string><key>_CFURLStringType</key><integer>15</integer></dict></dict></dict>"'
+  with_items: dock_others
+
+- name: Reset dock size
+  shell: defaults write com.apple.dock tilesize -int {{ osx_dock_tile_px }}
+
+- name: Restart Dock
+  shell: killall Dock
+  ignore_errors: yes

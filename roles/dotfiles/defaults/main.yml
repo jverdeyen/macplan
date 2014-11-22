@@ -1,0 +1,3 @@
+dotfiles_dir: ''
+gitconfig_name: John Doe
+gitconfig_email: john@ansible.com

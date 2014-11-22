@@ -1,0 +1,13 @@
+homebrew_apps:
+    - git
+    - brew-cask
+
+homebrew_taps:
+  - caskroom/cask
+  - homebrew/binary
+  - homebrew/dupes
+  - homebrew/php
+  - homebrew/versions
+  - caskroom/versions
+
+cask_apps: []

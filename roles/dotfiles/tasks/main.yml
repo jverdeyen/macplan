@@ -1,0 +1,13 @@
+- name: Copy dotfiles
+  template: src="{{ item }}.j2" dest="{{ dotfiles_dir }}/.{{ item }}"
+  ignore_errors: yes
+  with_items:
+    - gitconfig
+    - bash_prompt
+    - hushlogin
+    - exports
+    - gitattributes
+    - curlrc
+    - aliases
+    - bash_profile
+    - vimrc

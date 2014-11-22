@@ -1,0 +1,71 @@
+user: Username
+account_picture: files/Picture.jpg
+dotfiles_dir: '/Users/{{ user }}/'
+gitconfig_name: John Doe
+gitconfig_email: john@ansible.com
+osx_lock_screen_text: Found Me? Stole Me? Return me Back!\n ..
+osx_dock_tile_px: 42
+osx_hostname: Macbook
+
+cask_apps:
+  - sublime-text3
+  - vagrant
+  - vagrant-manager
+  - virtualbox
+  - google-chrome
+  - firefox
+  - sequel-pro
+  - twitterrific
+  - spotify
+  - slack
+  - onepassword
+  - flux
+  - istat-menus
+  - adium
+  - arduino
+  - cocoarestclient
+  - grandtotal
+  - sonos
+  - vlc
+  - ynab
+  - alfred
+  - firefoxdeveloperedition
+  - java7
+
+dock_apps:
+  # Finder.app (default)
+  # Mail.app
+  - <dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Mail.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>
+  # Messages.app
+  - <dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Messages.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>
+  # Adium.app
+  - <dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Adium.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>
+  # Calendar.app
+  - <dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Calendar.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>
+   # Reminders.app
+  - <dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Reminders.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>
+   # Slack.app
+  - <dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Slack.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>
+  # Spacer
+  - '{tile-data={}; tile-type="spacer-tile";}'
+
+  # Safari.app
+  - <dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Safari.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>
+  # Firefox.app
+  - <dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Firefox.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>
+  # FirefoxDeveloperEdition.app
+  - <dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/FirefoxDeveloperEdition.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>
+  # Terminal.app
+  - <dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Utilities/Terminal.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>
+  # Sublime Text.app
+  - <dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Sublime Text.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>
+  # Spacer
+  - '{tile-data={}; tile-type="spacer-tile";}'
+
+  # Sequel Pro.app
+  - <dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Sequel Pro.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>
+  # Spotify.app
+  - <dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>/Applications/Spotify.app</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>
+
+dock_others:
+  - /Users/Joeri/Downloads/

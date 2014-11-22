@@ -1,0 +1,7 @@
+---
+
+- name: Install mackup
+  homebrew: name=mackup state=present
+
+- name: Open dropbox and make sure it's active and configured
+  command: open /Applications/Dropbox.app

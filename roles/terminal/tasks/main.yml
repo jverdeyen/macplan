@@ -1,0 +1,16 @@
+---
+
+- name: Copy terminal settings file
+  copy: src=Peppermint.terminal dest=/tmp/Peppermint.terminal
+
+- name: Set default terminal
+  command: open /tmp/Peppermint.terminal
+  ignore_errors: yes
+
+- name: 'Terminal: Set startup window'
+  shell: 'defaults write com.apple.Terminal "Startup Window Settings" -string Peppermint'
+
+- name: 'Terminal: Set default window'
+  shell: 'defaults write com.apple.Terminal "Default Window Settings" -string Peppermint'
+
+
