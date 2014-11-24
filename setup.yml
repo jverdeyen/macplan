@@ -16,4 +16,3 @@
     - { role: mackup, tags: ['mackup'] }
     - { role: account, tags: ['account'] }
     - { role: vagrant, tags: ['vagrant'] }
-    - { role: ssh, tags: ['ssh'] }

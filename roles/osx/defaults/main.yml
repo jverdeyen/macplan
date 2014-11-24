@@ -316,6 +316,12 @@ osx_defaults:
     - com.apple.Safari WebKitDeveloperExtrasEnabledPreferenceKey -bool true
     - com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled -bool true
 
+    # open new tab: empty page
+    - com.apple.Safari NewTabBehavior 1
+
+    # open new window with homepage
+    - com.apple.Safari NewWindowBehavior 0 
+
     # Add a context menu item for showing the Web Inspector in web views
     - NSGlobalDomain WebKitDeveloperExtras -bool true
 

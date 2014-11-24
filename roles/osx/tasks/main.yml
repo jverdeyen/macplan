@@ -24,9 +24,13 @@
   sudo: true
   with_items: osx_defaults
 
+- name: Executing defaults commands, tweaking osx
+  shell: sudo defaults write {{ item }}
+  sudo: true
+  with_items: osx_defaults
+
 - name: Set Lock screen message
   shell: sudo defaults write om.apple.loginwindow LoginwindowText "{{ osx_lock_screen_text }}"
-
 
 
 # - name: Setup desktop icons style
