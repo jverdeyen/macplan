@@ -20,14 +20,14 @@
   shell: hash tmutil &> /dev/null && sudo tmutil disablelocal
 
 - name: Executing defaults commands, tweaking osx
-  shell: defaults write {{ item }}
-  sudo: true
+  command: defaults write {{ item }}
   with_items: osx_defaults
+  ignore_errors: yes
 
 - name: Executing defaults commands, tweaking osx
   shell: sudo defaults write {{ item }}
-  sudo: true
   with_items: osx_defaults
+  ignore_errors: yes
 
 - name: Set Lock screen message
   shell: sudo defaults write om.apple.loginwindow LoginwindowText "{{ osx_lock_screen_text }}"
