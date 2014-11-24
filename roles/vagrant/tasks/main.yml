@@ -1,0 +1,5 @@
+---
+
+- name: Install vagrant plugins
+  shell: vagrant plugin install {{ item }}
+  with_items: vagrant_plugins

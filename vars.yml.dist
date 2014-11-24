@@ -7,6 +7,16 @@ osx_lock_screen_text: Found Me? Stole Me? Return me Back!\n ..
 osx_dock_tile_px: 42
 osx_hostname: Macbook
 
+homebrew_apps:
+    - git
+    - brew-cask
+    - htop-osx
+
+vagrant_plugins:
+  - vagrant-vbguest 
+  - vagrant-cachier
+  - vagrant-hostsupdater
+  
 cask_apps:
   - sublime-text3
   - vagrant
