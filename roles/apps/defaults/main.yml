@@ -11,3 +11,5 @@ homebrew_taps:
   - caskroom/versions
 
 cask_apps: []
+
+alfred_cask_integration: true
