@@ -11,12 +11,8 @@ homebrew_apps:
     - git
     - brew-cask
     - htop-osx
+    - ssh-copy-id
 
-vagrant_plugins:
-  - vagrant-vbguest 
-  - vagrant-cachier
-  - vagrant-hostsupdater
-  
 cask_apps:
   - sublime-text3
   - vagrant
@@ -25,7 +21,6 @@ cask_apps:
   - google-chrome
   - firefox
   - sequel-pro
-  - twitterrific
   - spotify
   - slack
   - onepassword
@@ -34,14 +29,15 @@ cask_apps:
   - adium
   - arduino
   - cocoarestclient
-  - grandtotal
   - sonos
   - vlc
-  - ynab
   - alfred
   - firefoxdeveloperedition
   - java7
-  - dropbox
+  - dropbox-experimental
+  - google-drive
+  - garmin-communicator
+  - macdown
 
 dock_apps:
   # Finder.app (default)
