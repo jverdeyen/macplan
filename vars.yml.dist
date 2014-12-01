@@ -12,6 +12,7 @@ homebrew_apps:
     - brew-cask
     - htop-osx
     - ssh-copy-id
+    - git-flow
 
 cask_apps:
   - sublime-text3
@@ -38,6 +39,7 @@ cask_apps:
   - google-drive
   - garmin-communicator
   - macdown
+  - flash-player
 
 dock_apps:
   # Finder.app (default)
