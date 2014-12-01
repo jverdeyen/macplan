@@ -12,3 +12,10 @@
     - bash_profile
     - vimrc
     - inputrc
+    - symfony2-autocomplete.bash
+
+- name: Copy dotfiles
+  copy: src="{{ item }}" dest="{{ dotfiles_dir }}/.{{ item }}"
+  ignore_errors: yes
+  with_items:
+    - git-completion.bash
