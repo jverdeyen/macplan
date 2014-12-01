@@ -40,6 +40,7 @@ cask_apps:
   - garmin-communicator
   - macdown
   - flash-player
+  - heroku
 
 dock_apps:
   # Finder.app (default)
