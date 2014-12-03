@@ -13,6 +13,7 @@ homebrew_apps:
     - htop-osx
     - ssh-copy-id
     - git-flow
+    - the_silver_searcher
 
 cask_apps:
   - sublime-text3
