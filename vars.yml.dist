@@ -42,6 +42,7 @@ cask_apps:
   - macdown
   - flash-player
   - heroku
+  - gas-mask
 
 dock_apps:
   # Finder.app (default)

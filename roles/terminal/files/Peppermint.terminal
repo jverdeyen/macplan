@@ -233,7 +233,7 @@
 	<key>VisualBellOnlyWhenMuted</key>
 	<false/>
 	<key>columnCount</key>
-	<integer>105</integer>
+	<integer>140</integer>
 	<key>mouseLeftClick</key>
 	<data>
 	BAtzdHJlYW10eXBlZIHoA4QBQISEhAhOU051bWJlcgCEhAdOU1ZhbHVlAISECE5TT2Jq
@@ -262,7 +262,7 @@
 	<key>name</key>
 	<string>Peppermint</string>
 	<key>rowCount</key>
-	<integer>55</integer>
+	<integer>45</integer>
 	<key>shellExitAction</key>
 	<integer>1</integer>
 	<key>type</key>
