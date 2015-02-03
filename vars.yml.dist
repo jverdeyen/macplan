@@ -13,7 +13,7 @@ homebrew_apps:
     - htop-osx
     - ssh-copy-id
     - git-flow
-    - the_silver_searcher
+    - heroku
 
 cask_apps:
   - sublime-text3
@@ -41,8 +41,17 @@ cask_apps:
   - garmin-communicator
   - macdown
   - flash-player
-  - heroku
   - gas-mask
+  - garmin-express
+  - cyberduck
+  - grandtotal
+  - ynab
+
+vagrant_plugins:
+  - vagrant-vbguest
+  - vagrant-cachier
+  - vagrant-hostsupdater
+  - vagrant-triggers
 
 dock_apps:
   # Finder.app (default)
