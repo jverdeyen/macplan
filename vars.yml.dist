@@ -6,6 +6,7 @@ gitconfig_email: john@ansible.com
 osx_lock_screen_text: Found Me? Stole Me? Return me Back!\n ..
 osx_dock_tile_px: 42
 osx_hostname: Macbook
+terminal_theme: Flat
 
 homebrew_apps:
     - git
