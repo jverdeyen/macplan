@@ -3,7 +3,7 @@ export PATH="$HOME/bin:$PATH"
 
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
-for file in ~/.{path,bash_prompt,exports,aliases,git-completion.bash,symfony2-autocomplete.bash}; do
+for file in ~/.{path,bash_prompt,exports,aliases,git-completion.bash,symfony2-autocomplete.bash,git-flow-autocomplete.bash}; do
     [ -r "$file" ] && source "$file"
 done
 unset file

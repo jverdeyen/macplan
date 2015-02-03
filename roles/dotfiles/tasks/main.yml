@@ -13,9 +13,17 @@
     - vimrc
     - inputrc
     - symfony2-autocomplete.bash
+    - git-flow-autocomplete.bash
 
 - name: Copy dotfiles
   copy: src="{{ item }}" dest="{{ dotfiles_dir }}/.{{ item }}"
   ignore_errors: yes
   with_items:
     - git-completion.bash
+
+- name: Create vim dirs
+  file: path="{{ item }}" state=directory
+  with_items:
+    - ~/.vim/swaps
+    - ~/.vim/backups
+    - ~/.vim/undo
