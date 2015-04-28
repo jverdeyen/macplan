@@ -23,7 +23,7 @@ brew install ansible git
 ## Step 4: Clone mac-setup repository
 ```
 git clone [url-of-this-or-your-repo]
-cd mac-setup
+cd macplan
 ```
 
 ## Step 5: vars.yml
