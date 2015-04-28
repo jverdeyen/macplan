@@ -15,7 +15,6 @@ homebrew_apps:
     - ssh-copy-id
     - git-flow
     - heroku
-    - osxfuse
 
 cask_apps:
   - sublime-text3
@@ -48,6 +47,7 @@ cask_apps:
   - cyberduck
   - grandtotal
   - ynab
+  - osxfuse
 
 vagrant_plugins:
   - vagrant-vbguest
