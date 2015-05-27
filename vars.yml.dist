@@ -15,6 +15,22 @@ homebrew_apps:
     - ssh-copy-id
     - git-flow
     - heroku
+    - docker
+    - docker-compose
+    - composer
+    - fig
+    - boot2docker
+    - autoconf
+    - curl
+    - chromedriver
+    - selenium-server-standalone
+    - siege
+    - ngrok
+    - git-flow
+    - php-cs-fixer
+    - php-code-sniffer
+    - unrar
+    - node
 
 cask_apps:
   - sublime-text3
