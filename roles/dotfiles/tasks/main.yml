@@ -16,6 +16,7 @@
     - git-flow-autocomplete.bash
     - git-completion.bash
     - boot2docker.bash
+    - docker-alias.bash
 
 
 - name: Create vim dirs
