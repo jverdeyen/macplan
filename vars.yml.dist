@@ -18,7 +18,6 @@ homebrew_apps:
     - docker
     - docker-compose
     - composer
-    - fig
     - boot2docker
     - autoconf
     - curl
