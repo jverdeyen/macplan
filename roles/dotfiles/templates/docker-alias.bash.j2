@@ -39,6 +39,9 @@ dri() { docker rmi $(docker images -q); }
 # Dockerfile build, e.g., $dbu tcnksm/test
 dbu() { docker build -t=$1 .; }
 
+# Execute command in Docker Compose service¬                                                                        
+dexec() { docker exec -it `docker-compose ps -q $1` $2; }
+  
 # Show all alias related docker
 dalias() { alias | grep 'docker' | sed "s/^\([^=]*\)=\(.*\)/\1 => \2/"| sed "s/['|\']//g" | sort; }
 {% endraw %}
