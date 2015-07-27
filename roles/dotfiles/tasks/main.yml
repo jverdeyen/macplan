@@ -18,6 +18,7 @@
     - boot2docker.bash
     - docker-alias.bash
     - docker-autocomplete.bash
+    - docker-compose-autocomplete.bash
 
 
 - name: Create vim dirs
