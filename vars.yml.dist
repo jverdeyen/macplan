@@ -13,7 +13,7 @@ homebrew_apps:
     - brew-cask
     - htop-osx
     - ssh-copy-id
-    - git-flow
+    - git-flow-avh
     - heroku
     - docker
     - docker-compose
