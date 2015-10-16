@@ -25,7 +25,6 @@ homebrew_apps:
     - selenium-server-standalone
     - siege
     - ngrok
-    - git-flow
     - php-cs-fixer
     - php-code-sniffer
     - unrar
