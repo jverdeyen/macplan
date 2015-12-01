@@ -142,7 +142,7 @@ alias vkill="vagrant destroy --force"
 alias dnsflush="sudo dscacheutil -flushcache;sudo killall -HUP mDNSResponder;echo dns cache flushed"
 alias flushdns="dnsflush"
 
-alias composer='export COMPOSER_VENDOR_DIR="vendor"; composer'
+alias composer="COMPOSER_VENDOR_DIR=vendor composer"
 
 # When developing with docker container, and you want phpstorm to index the vendor dir
-alias composer-local='export COMPOSER_VENDOR_DIR="_vendor"; composer --no-autoloader --no-scripts'
+alias composer-local="COMPOSER_VENDOR_DIR=_vendor /usr/local/bin/composer --no-autoloader --no-scripts"
