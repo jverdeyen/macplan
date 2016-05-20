@@ -9,10 +9,8 @@
 
   roles:
     - { role: apps, tags: ['apps'] }
-    - { role: dotfiles, tags: ['dotfiles'] }
     - { role: osx, tags: ['osx'] }
     - { role: dock, tags: ['dock'] }
     - { role: terminal, tags: ['terminal'] }
     - { role: mackup, tags: ['mackup'] }
     - { role: account, tags: ['account'] }
-    - { role: vagrant, tags: ['vagrant'] }

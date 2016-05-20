@@ -8,8 +8,8 @@
   homebrew: name={{ item }} state=present
   with_items: homebrew_apps
 
-- name: Install Cask apps
-  shell: brew cask install {{ item }} --appdir=/Applications
+- name: Install Brew Cask apps
+  homebrew_cask: name={{ item }} --appdir=/Applications
   with_items: cask_apps
 
 - name: Link Alfred and Cask

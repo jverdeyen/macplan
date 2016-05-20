@@ -1,5 +1,13 @@
 ---
 
+- name: Link Mackup config dir
+  file: src=/Users/{{ user }}/Dropbox/Mackup/.mackup dest=/Users/{{ user }}/.mackup state=link
+
+- name: Copy custom config files
+  copy: src={{ item }} dest=/Users/{{ user }}/.mackup
+  with_items:
+    - dotfiles.cfg
+
 - name: Install mackup
   homebrew: name=mackup state=present
 

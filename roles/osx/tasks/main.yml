@@ -22,7 +22,7 @@
 - name: Executing defaults commands, tweaking osx
   command: "{{ item }}"
   with_items: osx_defaults
-  sudo_user: "{{ user }}"
+  become: true
   ignore_errors: yes
 
 - name: Executing defaults commands as sudo, tweaking osx
