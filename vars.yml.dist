@@ -1,73 +1,90 @@
-user: Username
+user: joeri
 account_picture: files/Picture.jpg
 dotfiles_dir: '/Users/{{ user }}/'
-gitconfig_name: John Doe
-gitconfig_email: john@ansible.com
+gitconfig_name: Joeri Verdeyen
+gitconfig_email: joeriv@yappa.be
 osx_lock_screen_text: Found Me? Stole Me? Return me Back!\n ..
 osx_dock_tile_px: 42
 osx_hostname: Macbook
-terminal_theme: Flat
+terminal_theme: Piperita
 
 homebrew_apps:
-    - git
-    - brew-cask
-    - htop-osx
-    - ssh-copy-id
-    - git-flow-avh
-    - heroku
-    - docker
-    - docker-compose
-    - composer
-    - boot2docker
+    - ansible
+    - glib
+    - mackup
+    - phplint
     - autoconf
+    - mcrypt
+    - mhash
+    - pkg-config
+    - ncdu
+    - readline
+    - composer
+    - htop-osx
     - curl
-    - chromedriver
-    - selenium-server-standalone
+    - icu4c
+    - ngrep
     - siege
     - ngrok
-    - php-cs-fixer
+    - ssh-copy-id
+    - diff-so-fancy
+    - jpeg
+    - node
+    - jpegoptim
+    - openssl
+    - testssl
+    - docker
+    - less
+    - optipng
+    - docker-compose
+    - libffi
+    - libgcrypt
+    - pcre
+    - libgpg-error
     - php-code-sniffer
     - unrar
-    - node
+    - libpng
+    - php-cs-fixer
+    - wget
+    - geoip
+    - libssh2
+    - php56
+    - gettext
+    - libtasn1
+    - php56-intl
+    - git
+    - libtool
+    - php70
+    - git-flow
+    - libxml2
+    - php70-mcrypt
+    - zlib
+    - git-ftp
+    - libyaml
+    - phpcpd
 
 cask_apps:
   - sublime-text3
   - vagrant
-  - vagrant-manager
   - virtualbox
   - google-chrome
   - firefox
   - sequel-pro
   - spotify
   - slack
-  - 1password
+  - 1password-beta
   - flux
   - istat-menus
   - adium
-  - arduino
   - cocoarestclient
   - sonos
   - vlc
   - alfred
-  - firefoxdeveloperedition
   - java7
   - dropbox-experimental
-  - google-drive
-  - garmin-communicator
   - macdown
-  - flash-player
   - gas-mask
-  - garmin-express
   - cyberduck
-  - grandtotal
-  - ynab
-  - osxfuse
-
-vagrant_plugins:
-  - vagrant-vbguest
-  - vagrant-cachier
-  - vagrant-hostsupdater
-  - vagrant-triggers
 
 dock_apps:
   # Finder.app (default)
